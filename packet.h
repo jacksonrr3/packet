@@ -150,7 +150,8 @@ public:
 		destination_port_ = data[2] * 256 + data[3];
 		length_ = data[4] * 256 + data[5];
 		checksum_ = data[6] * 256 + data[7];
-		std::copy_n(data[8], length_ - 8, data_.begin());
+		data_.resize(length_ - 8);
+		std::copy_n(data+8, length_ - 8, data_.begin());
 	}
 
 	std::string dstmac() { return ""; }
@@ -158,24 +159,21 @@ public:
 
 	std::string scrip() { return ""; }
 	std::string dstip() { return ""; }
-
 };
 
 
 class Packet {
 
 	std::size_t packet_lenght_;					//длинна пакета
-	unsigned char* packet_ = nullptr;			//указатель на пакет данных, равен указателю на заголовок 2-го уровня
-	unsigned char* l3_ip_ = nullptr;			//указатель на залоговок 3-го уровня
-	std::size_t l3_header_lenght_;				//длинна заголовка 3-го уровня в байтах
-	unsigned char* l4_ = nullptr;				//указатель на залоговок 4-го уровня
+	unsigned char* packet_ = nullptr;				//указатель на пакет данных, равен указателю на заголовок 2-го уровня
+	unsigned char* l3_ip_ = nullptr;				//указатель на залоговок 3-го уровня
+	std::size_t l3_header_lenght_;					//длинна заголовка 3-го уровня в байтах
+	unsigned char* l4_ = nullptr;					//указатель на залоговок 4-го уровня
 	unsigned char l4_type_;						//тип протокола 4-го уровня
 
 	bool l2_chsum_ = true;						//проверка контрольной суммы
 	bool l3_chsum_ = true;						//проверка контрольной суммы
 	bool l4_chsum_ = true;						//проверка контрольной суммы
-
-	//unsigned char* data_ = nullptr;			//указатель на данные. 
 
 	Packet(const Packet& p) = delete;
 	Packet& operator=(const Packet& p) = delete;
@@ -191,7 +189,7 @@ public:
 		l4_ = l3_ip_ + l3_header_lenght_;
 		l4_type_ = l3_ip_[9];
 
-		//реализовать подсчет контрольных сумм
+		//реализовать подсчет контрольных сумм, или подсчитывать кс в методах L2, L3, L4
 	}
 
 	bool is_packet_correct() {
