@@ -1,6 +1,4 @@
 #include <iostream>
-#include <string>
-#include <sstream>
 #include <array>
 #include <vector>
 #include "packet.h"
@@ -32,15 +30,6 @@ int main() {
 	std::cout << l3_tcp->scrip() << " " << l3_tcp->dstip() << std::endl;
 	auto l4_tcp = p_tcp.l4();
 	
-
-
-	std::stringstream ss;
-	unsigned char c = 0xe8;
-
-	ss << std::hex << (int)c << "." << (int)c;
-	std::string str(ss.str());
-	std::cout << str;
-
 
 	return 0;
 }
