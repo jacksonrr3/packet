@@ -9,37 +9,37 @@
 #include <utility>
 
 
-class Protocol {
-
-public:
-	Protocol() = default;
-	virtual ~Protocol() = default;
-
-	virtual std::string dstmac() = 0;
-	virtual std::string srcmac() = 0;
-
-	virtual std::string scrip() = 0;
-	virtual std::string dstip() = 0;
+	virtual void parse(const data * data) = 0;
+	const data* header() {
+		return &_header;
+	};
 
 };
 
 class L2ProtoEthernet : public Protocol {
-	std::array<unsigned char, 6> dest_mac_;
-	std::array<unsigned char, 6> source_mac_;
-	std::array<unsigned char, 2> type_;
+
+	data _dest_mac;
+	data _sourse_mac;
+	data _type;
+	//std::array<unsigned char, 6> dest_mac_;
+	//std::array<unsigned char, 6> source_mac_;
+	//std::array<unsigned char, 2> type_;
 
 public:
 	L2ProtoEthernet(unsigned char* data) {
+	}
+
+	virtual void parse(const data* data) {
 		std::copy_n(data, 6, dest_mac_.begin());
 		std::copy_n((data + 6), 6, source_mac_.begin());
 		std::copy_n((data + 12), 2, type_.begin());
-	}
+	};
 
 	std::string dstmac() {
 		std::stringstream ss;
 		ss << std::hex << (int)dest_mac_[0] << " " << (int)dest_mac_[1] << " " <<
 			(int)dest_mac_[2] << " " << (int)dest_mac_[3] << " " <<
-			(int)dest_mac_[4] << " " <<	(int)dest_mac_[5];
+			(int)dest_mac_[4] << " " << (int)dest_mac_[5];
 		return std::move(std::string(ss.str()));
 	}
 
@@ -51,8 +51,6 @@ public:
 		return std::move(std::string(ss.str()));
 	}
 
-	std::string scrip() { return ""; }
-	std::string dstip() { return ""; }
 
 };
 
@@ -93,6 +91,8 @@ public:
 		std::copy_n(data + 20, (header_size_ * 4) - 20, options_.begin());
 	}
 
+	virtual void parse(const data* data) {};
+
 	std::string scrip() {
 		return std::to_string(src_ip_[0]) + "." +
 			std::to_string(src_ip_[1]) + "." +
@@ -107,8 +107,6 @@ public:
 			std::to_string(dst_ip_[3]);
 	}
 
-	virtual std::string dstmac() { return ""; }
-	virtual std::string srcmac() { return ""; }
 
 };
 
@@ -123,7 +121,7 @@ class L4ProtoUDP : public Protocol {
 
 public:
 	L4ProtoUDP(unsigned char* data) {
-	//	std::copy_n(data, 8, udp_header_.begin());
+		//	std::copy_n(data, 8, udp_header_.begin());
 		source_port_ = data[0] * 256 + data[1];
 		destination_port_ = data[2] * 256 + data[3];
 		length_ = data[4] * 256 + data[5];
@@ -132,11 +130,8 @@ public:
 		std::copy_n(data + 8, length_ - 8, data_.begin());
 	}
 
-	std::string dstmac() { return ""; }
-	std::string srcmac() { return ""; }
+	virtual void parse(const data* data) {};
 
-	std::string scrip() { return ""; }
-	std::string dstip() { return ""; }
 };
 
 class L4ProtoTCP : public Protocol {
@@ -173,11 +168,7 @@ public:
 		std::copy_n(data + (offset_ * 4), length - (offset_ * 4), data_.begin());
 	}
 
-	std::string dstmac() { return ""; }
-	std::string srcmac() { return ""; }
-
-	std::string scrip() { return ""; }
-	std::string dstip() { return ""; }
+	virtual void parse(const data* data) {};
 
 };
 
