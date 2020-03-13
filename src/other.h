@@ -9,8 +9,7 @@
 #include <exception>
 
 
-constexpr auto ETH_HDR_SZ = 14;		//размер заголовка ETH
-typedef uint8_t byte;
+constexpr auto ETH_HDR_SZ = 14;		typedef uint8_t byte;
 
 
 class ParseError : public std::exception
