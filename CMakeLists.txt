@@ -7,7 +7,7 @@ find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 add_library(${PROJECT_NAME} SHARED src/packet.cpp)
 
-add_executable(test_packet test_packet.cpp)
+add_executable(test_packet src/test_packet.cpp)
 
 set_target_properties(${PROJECT_NAME} test_packet PROPERTIES
     CXX_STANDARD 17
