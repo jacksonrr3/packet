@@ -1,4 +1,4 @@
-#define BOOST_TEST_MODULE helloworld_test_module
+#define BOOST_TEST_MODULE packet_test_module
 #include <vector>
 #include "packet.h"
 #include <boost/test/unit_test.hpp>
