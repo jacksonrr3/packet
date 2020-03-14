@@ -5,7 +5,7 @@ project(packet_lib VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 find_package(Threads REQUIRED)
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
-add_library(${PROJECT_NAME} SHARED src/packet.cpp)
+add_library(${PROJECT_NAME} SHARED src/packet.cpp src/packet.h)
 
 add_executable(test_packet src/test_packet.cpp)
 
