@@ -1,8 +1,9 @@
 #include "packet.h"
 
 void Packet::parse(unsigned char* d, std::size_t lenght) {
+	data temp{d, lenght};
 	_l2 = std::make_shared<L2ProtoEthernet>();
-	_l2->parse(&data(d, lenght));
+	_l2->parse(&temp);
 	
 	_l3 = std::make_shared<L3ProtoIPv4>();
 	_l3->parse(_l2->payload());
