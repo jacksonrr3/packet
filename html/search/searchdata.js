@@ -2,8 +2,8 @@ var indexSectionsWithContent =
 {
   0: "_bdehilmnopstw~",
   1: "dilmnp",
-  2: "mopt",
-  3: "bdhlmnopstw~",
+  2: "opt",
+  3: "bdhlnopstw~",
   4: "_eps",
   5: "b",
   6: "lp",

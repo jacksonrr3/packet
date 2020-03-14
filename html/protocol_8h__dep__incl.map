@@ -1,7 +1,6 @@
 <map id="src/protocol.h" name="src/protocol.h">
-<area shape="rect" id="node2" href="$packet_8h.html" title="Заголовочный файл с описанием классов Данный файл содержит в себе определения основных структур и фун..." alt="" coords="141,80,241,107"/>
-<area shape="rect" id="node6" href="$protocol_8cpp.html" title="src/protocol.cpp" alt="" coords="265,80,389,107"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="5,155,109,181"/>
-<area shape="rect" id="node4" href="$packet_8cpp.html" title="src/packet.cpp" alt="" coords="133,155,248,181"/>
-<area shape="rect" id="node5" href="$test__packet_8cpp.html" title="src/test_packet.cpp" alt="" coords="272,155,419,181"/>
+<area shape="rect" id="node2" href="$packet_8h.html" title="Заголовочный файл с описанием классов Данный файл содержит в себе определения основных структур и фун..." alt="" coords="90,80,190,107"/>
+<area shape="rect" id="node5" href="$protocol_8cpp.html" title="src/protocol.cpp" alt="" coords="214,80,338,107"/>
+<area shape="rect" id="node3" href="$packet_8cpp.html" title="src/packet.cpp" alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node4" href="$test__packet_8cpp.html" title="src/test_packet.cpp" alt="" coords="144,155,291,181"/>
 </map>

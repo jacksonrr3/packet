@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name',['name',['../classProtocol.html#a72e239dba6662c25afc3b8d45f472869',1,'Protocol']]]
+  ['operator_3d',['operator=',['../structdata.html#a1da1da74e377b8a47b7cf4f0d7facd85',1,'data']]]
 ];
