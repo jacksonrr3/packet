@@ -1,3 +1,11 @@
+/**
+\file
+\brief Заголовочный файл с описанием классов
+Данный файл содержит в себе определения основных 
+структур и функций, используемых в программе
+*/
+
+
 #pragma once
 
 #include <iostream>
@@ -11,6 +19,11 @@
 #include "protocol.h"
 
 
+/**
+ * @brief Основной класс. 
+ * метод parse принимает данные по указателю и длинне и разделяет на уровни L2, L3. L4.  
+ *
+ */
 class Packet {
 	std::shared_ptr<Protocol> _l2;
 	std::shared_ptr<Protocol> _l3;
@@ -24,11 +37,26 @@ class Packet {
 
 public:
 	Packet() = default;
-	
+/**
+ * @brief  метод parse принимает данные по указателю и длинне и разделяет на уровни L2, L3. L4.  . 
+ *
+ */
 	void parse(unsigned char* d, std::size_t lenght);
 	
+/**
+ * @brief  метод L2 возвращает объект протокола второго уровня по указателю на базовый класс Protocol. 
+ *
+ */
 	std::shared_ptr<Protocol> l2() const;
+/**
+ * @brief  метод L3 возвращает объект протокола второго уровня по указателю на базовый класс Protocol. 
+ *
+ */
 	std::shared_ptr<Protocol> l3() const;
+/**
+ * @brief  метод L4 возвращает объект протокола второго уровня по указателю на базовый класс Protocol. 
+ *
+ */
 	std::shared_ptr<Protocol> l4() const;
 
 };
