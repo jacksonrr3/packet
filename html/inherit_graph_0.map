@@ -1,0 +1,7 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$structdata.html" title="data" alt="" coords="5,56,56,83"/>
+<area shape="rect" id="node2" href="$classNetAddress.html" title="NetAddress" alt="" coords="104,56,201,83"/>
+<area shape="rect" id="node3" href="$classIp.html" title="Ip" alt="" coords="254,5,293,32"/>
+<area shape="rect" id="node4" href="$classMac.html" title="Mac" alt="" coords="249,56,297,83"/>
+<area shape="rect" id="node5" href="$classPort.html" title="Port" alt="" coords="249,107,297,133"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="NetAddress" name="NetAddress">
+<area shape="rect" id="node3" href="$classIp.html" title="Ip" alt="" coords="5,155,44,181"/>
+<area shape="rect" id="node4" href="$classMac.html" title="Mac" alt="" coords="69,155,117,181"/>
+<area shape="rect" id="node5" href="$classPort.html" title="Port" alt="" coords="141,155,189,181"/>
+<area shape="rect" id="node2" href="$structdata.html" title="data" alt="" coords="67,5,118,32"/>
+</map>

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Packet: Класс L4ProtoTCP</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Packet
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+   <div id="projectbrief">класс-анализатор сетевых пакетов</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classL4ProtoTCP-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс L4ProtoTCP</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="protocol_8h_source.html">protocol.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:L4ProtoTCP:</div>
+<div class="dyncontent">
+<div class="center"><img src="classL4ProtoTCP__inherit__graph.png" border="0" usemap="#L4ProtoTCP_inherit__map" alt="Inheritance graph"/></div>
+<map name="L4ProtoTCP_inherit__map" id="L4ProtoTCP_inherit__map">
+<area shape="rect" id="node2" href="classProtocol.html" title="Protocol" alt="" coords="15,5,90,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса L4ProtoTCP:</div>
+<div class="dyncontent">
+<div class="center"><img src="classL4ProtoTCP__coll__graph.png" border="0" usemap="#L4ProtoTCP_coll__map" alt="Collaboration graph"/></div>
+<map name="L4ProtoTCP_coll__map" id="L4ProtoTCP_coll__map">
+<area shape="rect" id="node2" href="classProtocol.html" title="Protocol" alt="" coords="15,109,90,136"/>
+<area shape="rect" id="node3" href="structdata.html" title="data" alt="" coords="27,5,78,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a4deaf78097cfbcf4045129b1fd04e095"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classL4ProtoTCP.html#a4deaf78097cfbcf4045129b1fd04e095">L4ProtoTCP</a> ()</td></tr>
+<tr class="separator:a4deaf78097cfbcf4045129b1fd04e095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457e4f502a3f8fd5ec61d47344cd484a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classL4ProtoTCP.html#a457e4f502a3f8fd5ec61d47344cd484a">parse</a> (const <a class="el" href="structdata.html">data</a> *d) override</td></tr>
+<tr class="separator:a457e4f502a3f8fd5ec61d47344cd484a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6331f3ebc2761ead32d469a7c1839b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNetAddress.html">NetAddress</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classL4ProtoTCP.html#ae6331f3ebc2761ead32d469a7c1839b2">destination</a> () const override</td></tr>
+<tr class="separator:ae6331f3ebc2761ead32d469a7c1839b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df08072682b51734955478df4b90035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNetAddress.html">NetAddress</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classL4ProtoTCP.html#a4df08072682b51734955478df4b90035">source</a> () const override</td></tr>
+<tr class="separator:a4df08072682b51734955478df4b90035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classProtocol"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classProtocol')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="classProtocol.html">Protocol</a></td></tr>
+<tr class="memitem:a5a5359f9566fc47d5758dd247e71668a inherit pub_methods_classProtocol"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocol.html#a5a5359f9566fc47d5758dd247e71668a">Protocol</a> ()</td></tr>
+<tr class="separator:a5a5359f9566fc47d5758dd247e71668a inherit pub_methods_classProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3769626a567da9e261687127fd91bc21 inherit pub_methods_classProtocol"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocol.html#a3769626a567da9e261687127fd91bc21">~Protocol</a> ()=default</td></tr>
+<tr class="separator:a3769626a567da9e261687127fd91bc21 inherit pub_methods_classProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e239dba6662c25afc3b8d45f472869 inherit pub_methods_classProtocol"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocol.html#a72e239dba6662c25afc3b8d45f472869">name</a> () const </td></tr>
+<tr class="separator:a72e239dba6662c25afc3b8d45f472869 inherit pub_methods_classProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_classProtocol"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classProtocol')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="classProtocol.html">Protocol</a></td></tr>
+<tr class="memitem:ac0d8ee7bfb13bbf5afb72bb6c6d3d3c1 inherit pro_methods_classProtocol"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdata.html">data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocol.html#ac0d8ee7bfb13bbf5afb72bb6c6d3d3c1">header</a> () const </td></tr>
+<tr class="separator:ac0d8ee7bfb13bbf5afb72bb6c6d3d3c1 inherit pro_methods_classProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4f41f6e8b59f4002189a55e75110fa inherit pro_methods_classProtocol"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdata.html">data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocol.html#a3a4f41f6e8b59f4002189a55e75110fa">payload</a> () const </td></tr>
+<tr class="separator:a3a4f41f6e8b59f4002189a55e75110fa inherit pro_methods_classProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classProtocol"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classProtocol')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="classProtocol.html">Protocol</a></td></tr>
+<tr class="memitem:a5b288df18c42a330734085d21eb8fb31 inherit pro_attribs_classProtocol"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocol.html#a5b288df18c42a330734085d21eb8fb31">_name</a></td></tr>
+<tr class="separator:a5b288df18c42a330734085d21eb8fb31 inherit pro_attribs_classProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba82f93a3435b291e162f32023e007b4 inherit pro_attribs_classProtocol"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdata.html">data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocol.html#aba82f93a3435b291e162f32023e007b4">_header</a></td></tr>
+<tr class="separator:aba82f93a3435b291e162f32023e007b4 inherit pro_attribs_classProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef078f1144688e8dbeff729c17f39f4 inherit pro_attribs_classProtocol"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdata.html">data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocol.html#a8ef078f1144688e8dbeff729c17f39f4">_payload</a></td></tr>
+<tr class="separator:a8ef078f1144688e8dbeff729c17f39f4 inherit pro_attribs_classProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a4deaf78097cfbcf4045129b1fd04e095"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">L4ProtoTCP::L4ProtoTCP </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="ae6331f3ebc2761ead32d469a7c1839b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNetAddress.html">NetAddress</a> * L4ProtoTCP::destination </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classProtocol.html#a9e357082b3af6a8e6a44ab0bb120970e">Protocol</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a457e4f502a3f8fd5ec61d47344cd484a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void L4ProtoTCP::parse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdata.html">data</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classProtocol.html#a5fb7f535f43ca511204ff6e73deb1dea">Protocol</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4df08072682b51734955478df4b90035"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNetAddress.html">NetAddress</a> * L4ProtoTCP::source </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="classProtocol.html#a3bbed8a3da23259ceea34b2ea73ba4aa">Protocol</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="protocol_8h_source.html">protocol.h</a></li>
+<li>src/<a class="el" href="protocol_8cpp.html">protocol.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
