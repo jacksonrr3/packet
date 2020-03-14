@@ -50,9 +50,21 @@ BOOST_AUTO_TEST_CASE(packet_test_tcp)
 	auto l2_tcp = p_tcp.l2();
     	auto l3_tcp = p_tcp.l3();
     	auto l4_tcp = p_tcp.l4();
+	
+	BOOST_REQUIRE_EQUAL(l2_tcp->name(), "Ethernet_version_2:");
+	BOOST_REQUIRE_EQUAL(l2_tcp->destination()->to_string(), "e8.5a.a7.20.10.2");
+	BOOST_REQUIRE_EQUAL(l2_tcp->source()->to_string(), "18.31.bf.c.20.95");
 
+	BOOST_REQUIRE_EQUAL(l3_udp->name(), "Internet_Protocol_version_4");
+	BOOST_REQUIRE_EQUAL(l3_udp->destination()->to_string() , "13.33.242.204");
+	BOOST_REQUIRE_EQUAL(l3_udp->source()->to_string(), "192.168.10.2");
+
+	BOOST_REQUIRE_EQUAL(l4_udp->name(), "Transmission_Control_Protocol");
+	BOOST_REQUIRE_EQUAL(l4_udp->destination()->to_string(), "443");
+	BOOST_REQUIRE_EQUAL(l4_udp->source()->to_string() , "61316");
+	
    // BOOST_REQUIRE_EQUAL(TestString, test);
-    BOOST_CHECK(true);
+   // BOOST_CHECK(true);
   
 }
 
