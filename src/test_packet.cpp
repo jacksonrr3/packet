@@ -66,7 +66,6 @@ BOOST_AUTO_TEST_CASE(packet_test_tcp)
 	
    // BOOST_REQUIRE_EQUAL(TestString, test);
    // BOOST_CHECK(true);
-  
-}
+  }
 
 BOOST_AUTO_TEST_SUITE_END()
