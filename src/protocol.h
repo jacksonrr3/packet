@@ -81,7 +81,7 @@ class L4ProtoUDP : public Protocol {
 public:
 	L4ProtoUDP();
 	
-	virtual void parse(const data* d);
+	virtual void parse(const data* d) override;
 	
 	NetAddress* destination() const override;
 	NetAddress* source() const override;
