@@ -51,7 +51,7 @@ BOOST_AUTO_TEST_CASE(packet_test_tcp)
     	auto l3_tcp = p_tcp.l3();
     	auto l4_tcp = p_tcp.l4();
 	
-	BOOST_REQUIRE_EQUAL(l2_tcp->name(), "Ethernet_version_2:");
+	BOOST_REQUIRE_EQUAL(l2_tcp->name(), "Ethernet_version_2");
 	BOOST_REQUIRE_EQUAL(l2_tcp->destination()->to_string(), "e8.5a.a7.20.10.2");
 	BOOST_REQUIRE_EQUAL(l2_tcp->source()->to_string(), "18.31.bf.c.20.95");
 
