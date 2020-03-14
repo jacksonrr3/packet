@@ -20,12 +20,22 @@ BOOST_AUTO_TEST_CASE(packet_test_udp)
 	auto l2_udp = p_udp.l2();
    	auto l3_udp = p_udp.l3();
     	auto l4_udp = p_udp.l4();
-  	
+	
+  	BOOST_REQUIRE_EQUAL(l2_udp->name(), "Ethernet_version_2");
+	BOOST_REQUIRE_EQUAL(l2_udp->destination()->to_string(),"e8.5a.a7.20.10.2");
+	BOOST_REQUIRE_EQUAL(l2_udp->source()->to_string() , "18.31.bf.c.20.95");
+		
+	BOOST_REQUIRE_EQUAL(l3_udp->name(), "Internet_Protocol_version_4");
+	BOOST_REQUIRE_EQUAL(l3_udp->destination()->to_string() , "64.233.165.95");
+	BOOST_REQUIRE_EQUAL(l3_udp->source()->to_string(), "192.168.10.2");
+
+	BOOST_REQUIRE_EQUAL(l4_udp->name(), "User_Datagram_Protocol");
+	BOOST_REQUIRE_EQUAL(l4_udp->destination()->to_string(), "443");
+	BOOST_REQUIRE_EQUAL(l4_udp->source()->to_string() , "55062");
   
-  
-  
+   
   //BOOST_REQUIRE_EQUAL(TestString, test);
-  BOOST_CHECK(true);
+  //BOOST_CHECK(l2_name && mac_dest && mac_src && l3_name && ip_dest && ip_src && l4_name && port_dest && port_src);
   
 }
 
