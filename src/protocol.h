@@ -75,7 +75,7 @@ class L4ProtoUDP : public Protocol {
 
 	data _source_port;
 	data _destination_port;
-	int _length;
+	std::size_t _length;
 	int _checksum;
 	
 public:
