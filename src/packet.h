@@ -29,7 +29,7 @@ class Packet {
     std::shared_ptr<Protocol> _l3;
     std::shared_ptr<Protocol> _l4;
 
-    byte _l3_version;
+   // byte _l3_version;
     byte _l4_type;
 
     Packet(const Packet& p) = delete;

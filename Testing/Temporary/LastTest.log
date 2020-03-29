@@ -1,10 +1,10 @@
-Start testing: Mar 29 21:27 UTC
+Start testing: Mar 29 21:36 UTC
 ----------------------------------------------------------
 1/1 Testing: packet_tests
 1/1 Test: packet_tests
 Command: "/home/travis/build/jacksonrr3/packet/test_packet"
 Directory: /home/travis/build/jacksonrr3/packet
-"packet_tests" start time: Mar 29 21:27 UTC
+"packet_tests" start time: Mar 29 21:36 UTC
 Output:
 ----------------------------------------------------------
 Running 2 test cases...
@@ -14,8 +14,8 @@ Running 2 test cases...
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"packet_tests" end time: Mar 29 21:27 UTC
+"packet_tests" end time: Mar 29 21:36 UTC
 "packet_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 29 21:27 UTC
+End testing: Mar 29 21:36 UTC
