@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Packet: Структура IPv4Header</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Packet
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+   <div id="projectbrief">класс-анализатор сетевых пакетов</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="structIPv4Header-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура IPv4Header</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="protocol_8h_source.html">protocol.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a6d0f44fff652d18c1791c3e1b0a57f90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#a6d0f44fff652d18c1791c3e1b0a57f90">_header_size</a>: 4</td></tr>
+<tr class="separator:a6d0f44fff652d18c1791c3e1b0a57f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4c04a01a90ee9ea7a5ca428bb17443"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#a2e4c04a01a90ee9ea7a5ca428bb17443">_version</a>: 4</td></tr>
+<tr class="separator:a2e4c04a01a90ee9ea7a5ca428bb17443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113a191244d9155789c5e8ce30576e58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#a113a191244d9155789c5e8ce30576e58">_dscp_ecn</a></td></tr>
+<tr class="separator:a113a191244d9155789c5e8ce30576e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152150ae201921873f50f8e7ab174128"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#a152150ae201921873f50f8e7ab174128">_packet_size</a> [<a class="el" href="constants_8h.html#a0a6a46945b5c6d78374a63d7b107eaec">IPV4_HDR_PACKET_SIZE</a>]</td></tr>
+<tr class="separator:a152150ae201921873f50f8e7ab174128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a0b08450d1600f0b05f724e4f0c7c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#a81a0b08450d1600f0b05f724e4f0c7c3">_packet_id</a> [<a class="el" href="constants_8h.html#ae345f01e13640a93983a99269224aa7f">IPV4_HDR_PACKET_ID</a>]</td></tr>
+<tr class="separator:a81a0b08450d1600f0b05f724e4f0c7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01a4e48e6fb661919296710f0fc70b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#aa01a4e48e6fb661919296710f0fc70b7">_flags_offset</a> [<a class="el" href="constants_8h.html#add093900c3879fbc094b2eb798da5f20">IPV4_HDR_FLAGS_OFFSET</a>]</td></tr>
+<tr class="separator:aa01a4e48e6fb661919296710f0fc70b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8312ac57dac973384e69712c30f30e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#a8c8312ac57dac973384e69712c30f30e">_live_time</a></td></tr>
+<tr class="separator:a8c8312ac57dac973384e69712c30f30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17aa12471ec58a081c1ebc8d5b0be225"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#a17aa12471ec58a081c1ebc8d5b0be225">_l4_protocol</a></td></tr>
+<tr class="separator:a17aa12471ec58a081c1ebc8d5b0be225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4add582155645dad609710a880b4cfac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#a4add582155645dad609710a880b4cfac">_header_check_sum</a> [<a class="el" href="constants_8h.html#a2334674048b9e26514d5f7862698d5a0">IPV4_HDR_CHECK_SUM</a>]</td></tr>
+<tr class="separator:a4add582155645dad609710a880b4cfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba1ed0538399a322f035e8ffbba43c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#a2ba1ed0538399a322f035e8ffbba43c7">_src_ip</a> [<a class="el" href="constants_8h.html#ad1fd6c25a8fcfd8f826803d8bfb604ca">IPV4_HDR_IP_SIZE</a>]</td></tr>
+<tr class="separator:a2ba1ed0538399a322f035e8ffbba43c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9efe6f7181fa6d9376833b9ac87bdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIPv4Header.html#aac9efe6f7181fa6d9376833b9ac87bdc">_dst_ip</a> [<a class="el" href="constants_8h.html#ad1fd6c25a8fcfd8f826803d8bfb604ca">IPV4_HDR_IP_SIZE</a>]</td></tr>
+<tr class="separator:aac9efe6f7181fa6d9376833b9ac87bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a113a191244d9155789c5e8ce30576e58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_dscp_ecn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac9efe6f7181fa6d9376833b9ac87bdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_dst_ip[<a class="el" href="constants_8h.html#ad1fd6c25a8fcfd8f826803d8bfb604ca">IPV4_HDR_IP_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa01a4e48e6fb661919296710f0fc70b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_flags_offset[<a class="el" href="constants_8h.html#add093900c3879fbc094b2eb798da5f20">IPV4_HDR_FLAGS_OFFSET</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4add582155645dad609710a880b4cfac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_header_check_sum[<a class="el" href="constants_8h.html#a2334674048b9e26514d5f7862698d5a0">IPV4_HDR_CHECK_SUM</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d0f44fff652d18c1791c3e1b0a57f90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_header_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a17aa12471ec58a081c1ebc8d5b0be225"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_l4_protocol</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c8312ac57dac973384e69712c30f30e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_live_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a81a0b08450d1600f0b05f724e4f0c7c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_packet_id[<a class="el" href="constants_8h.html#ae345f01e13640a93983a99269224aa7f">IPV4_HDR_PACKET_ID</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a152150ae201921873f50f8e7ab174128"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_packet_size[<a class="el" href="constants_8h.html#a0a6a46945b5c6d78374a63d7b107eaec">IPV4_HDR_PACKET_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ba1ed0538399a322f035e8ffbba43c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_src_ip[<a class="el" href="constants_8h.html#ad1fd6c25a8fcfd8f826803d8bfb604ca">IPV4_HDR_IP_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e4c04a01a90ee9ea7a5ca428bb17443"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> IPv4Header::_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>src/<a class="el" href="protocol_8h_source.html">protocol.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

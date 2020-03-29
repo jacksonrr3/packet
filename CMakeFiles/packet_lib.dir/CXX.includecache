@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/travis/build/jacksonrr3/packet/src/constants.h
+
 /home/travis/build/jacksonrr3/packet/src/other.cpp
 other.h
 /home/travis/build/jacksonrr3/packet/src/other.h
@@ -25,6 +27,8 @@ utility
 -
 exception
 -
+constants.h
+/home/travis/build/jacksonrr3/packet/src/constants.h
 
 /home/travis/build/jacksonrr3/packet/src/packet.cpp
 packet.h
@@ -66,6 +70,8 @@ vector
 algorithm
 -
 utility
+-
+memory
 -
 other.h
 /home/travis/build/jacksonrr3/packet/src/other.h

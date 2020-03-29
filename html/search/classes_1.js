@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ip',['Ip',['../classIp.html',1,'']]]
+  ['ethheader',['EthHeader',['../structEthHeader.html',1,'']]]
 ];

@@ -1,18 +1,19 @@
 #include "packet.h"
 
 void Packet::parse(unsigned char* d, std::size_t lenght) {
-	data temp{d, lenght};
+
 	_l2 = std::make_shared<L2ProtoEthernet>();
-	_l2->parse(&temp);
-	
+	_l2->parse({ d, lenght });
+
 	_l3 = std::make_shared<L3ProtoIPv4>();
 	_l3->parse(_l2->payload());
 	_l4_type = (std::dynamic_pointer_cast<L3ProtoIPv4>(_l3))->L4_protocol_type();
 
-	if (_l4_type == 6) {
+	if (_l4_type == TCP_NUMBER) {
 		_l4 = std::make_shared<L4ProtoTCP>();
 	}
-	if (_l4_type == 17) {
+
+	if (_l4_type == UDP_NUMBER) {
 		_l4 = std::make_shared<L4ProtoUDP>();
 	}
 
@@ -32,4 +33,3 @@ std::shared_ptr<Protocol> Packet::l3() const
 std::shared_ptr<Protocol> Packet::l4() const {
 	return _l4;
 }
-

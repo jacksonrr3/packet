@@ -1,7 +1,29 @@
 var searchData=
 [
+  ['_5facknowledgment_5fnumber',['_acknowledgment_number',['../structTCP__Header.html#a312828b8c79a985e9fb4d37cfb0c0a5a',1,'TCP_Header']]],
+  ['_5fchecksum',['_checksum',['../structUDP__Header.html#aa72e55de087351e801057c1269b70cde',1,'UDP_Header::_checksum()'],['../structTCP__Header.html#a0eae00b91d058992b0e974c252ecda10',1,'TCP_Header::_checksum()']]],
+  ['_5fdest_5fmac',['_dest_mac',['../structEthHeader.html#a42097bbaabe22d09336787d7e6ecc863',1,'EthHeader']]],
+  ['_5fdestination_5fport',['_destination_port',['../structUDP__Header.html#aa2e8867bfc8ffc37cc59a5e52a6212b6',1,'UDP_Header::_destination_port()'],['../structTCP__Header.html#a10a026131370fcd425aae2cdd22f59d9',1,'TCP_Header::_destination_port()']]],
+  ['_5fdscp_5fecn',['_dscp_ecn',['../structIPv4Header.html#a113a191244d9155789c5e8ce30576e58',1,'IPv4Header']]],
+  ['_5fdst_5fip',['_dst_ip',['../structIPv4Header.html#aac9efe6f7181fa6d9376833b9ac87bdc',1,'IPv4Header']]],
+  ['_5fflags_5foffset',['_flags_offset',['../structIPv4Header.html#aa01a4e48e6fb661919296710f0fc70b7',1,'IPv4Header']]],
   ['_5fheader',['_header',['../classProtocol.html#aba82f93a3435b291e162f32023e007b4',1,'Protocol']]],
+  ['_5fheader_5fcheck_5fsum',['_header_check_sum',['../structIPv4Header.html#a4add582155645dad609710a880b4cfac',1,'IPv4Header']]],
+  ['_5fheader_5fsize',['_header_size',['../structIPv4Header.html#a6d0f44fff652d18c1791c3e1b0a57f90',1,'IPv4Header']]],
+  ['_5fl4_5fprotocol',['_l4_protocol',['../structIPv4Header.html#a17aa12471ec58a081c1ebc8d5b0be225',1,'IPv4Header']]],
+  ['_5flength',['_length',['../structUDP__Header.html#a27b7719d54eda94473ef12c4a2d7911d',1,'UDP_Header']]],
+  ['_5flive_5ftime',['_live_time',['../structIPv4Header.html#a8c8312ac57dac973384e69712c30f30e',1,'IPv4Header']]],
   ['_5fname',['_name',['../classProtocol.html#a5b288df18c42a330734085d21eb8fb31',1,'Protocol']]],
+  ['_5foffset_5freserv_5fflags',['_offset_reserv_flags',['../structTCP__Header.html#a135c2a9e8ae3141b6d8db302a26f0206',1,'TCP_Header']]],
+  ['_5fpacket_5fid',['_packet_id',['../structIPv4Header.html#a81a0b08450d1600f0b05f724e4f0c7c3',1,'IPv4Header']]],
+  ['_5fpacket_5fsize',['_packet_size',['../structIPv4Header.html#a152150ae201921873f50f8e7ab174128',1,'IPv4Header']]],
   ['_5fpayload',['_payload',['../classProtocol.html#a8ef078f1144688e8dbeff729c17f39f4',1,'Protocol']]],
-  ['_5ftype',['_type',['../classNetAddress.html#a81bae5e7bc500f3c5928dcbb05d905d5',1,'NetAddress']]]
+  ['_5fsequence_5fnumber',['_sequence_number',['../structTCP__Header.html#a6d62e6876ad551e64d5acd01a7941418',1,'TCP_Header']]],
+  ['_5fsource_5fmac',['_source_mac',['../structEthHeader.html#acf7834327c9565dc41c98a1d2228457e',1,'EthHeader']]],
+  ['_5fsource_5fport',['_source_port',['../structUDP__Header.html#addfaddc02d86153c1e00843ff02ad60b',1,'UDP_Header::_source_port()'],['../structTCP__Header.html#a0d61a768fa20c72439fd2227dbb7aa10',1,'TCP_Header::_source_port()']]],
+  ['_5fsrc_5fip',['_src_ip',['../structIPv4Header.html#a2ba1ed0538399a322f035e8ffbba43c7',1,'IPv4Header']]],
+  ['_5ftype',['_type',['../classNetAddress.html#a81bae5e7bc500f3c5928dcbb05d905d5',1,'NetAddress::_type()'],['../structEthHeader.html#aa78f8a662eead24ca8226d0d77897e4c',1,'EthHeader::_type()']]],
+  ['_5furgent_5fpoint',['_urgent_point',['../structTCP__Header.html#a36d5a2378dbba714719b33212d4c0378',1,'TCP_Header']]],
+  ['_5fversion',['_version',['../structIPv4Header.html#a2e4c04a01a90ee9ea7a5ca428bb17443',1,'IPv4Header']]],
+  ['_5fwindow_5fsize',['_window_size',['../structTCP__Header.html#a909983320886112800316004a8ce037f',1,'TCP_Header']]]
 ];

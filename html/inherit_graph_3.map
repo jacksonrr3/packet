@@ -1,7 +1,3 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$classProtocol.html" title="Protocol" alt="" coords="5,81,80,108"/>
-<area shape="rect" id="node2" href="$classL2ProtoEthernet.html" title="L2ProtoEthernet" alt="" coords="128,5,255,32"/>
-<area shape="rect" id="node3" href="$classL3ProtoIPv4.html" title="L3ProtoIPv4" alt="" coords="143,56,240,83"/>
-<area shape="rect" id="node4" href="$classL4ProtoTCP.html" title="L4ProtoTCP" alt="" coords="144,107,239,133"/>
-<area shape="rect" id="node5" href="$classL4ProtoUDP.html" title="L4ProtoUDP" alt="" coords="142,157,241,184"/>
+<area shape="rect" id="node1" href="$classPacket.html" title="Основной класс. метод parse принимает данные по указателю и длинне и разделяет на уровни L2..." alt="" coords="5,5,69,32"/>
 </map>

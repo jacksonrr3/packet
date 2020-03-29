@@ -1,79 +1,58 @@
 #include "other.h"
 
+ParseError::ParseError(std::string error)
+	: runtime_error(error) {}
 
-	ParseError::ParseError(std::string error)
-		: m_error(error){}
+data::data() = default;
+data::data(byte* p, const std::size_t& l) :ptr(p), size(l) {}
 
-	const char* ParseError::what() const noexcept
-	{
-		return m_error.c_str();
-	}
+data& data::operator=(const data& d)
+{
+	ptr = d.ptr;
+	size = d.size;
+	return *this;
+}
 
 
-	data::data() {}
-	data::data(byte* p, const std::size_t& l) :ptr(p), size(l) {}
+Mac::Mac(byte* d, const std::string s) : NetAddress({ d , ETH_MAC_SIZE }, s){}
 
-	data& data::operator=(const data& d)
-	{
-		ptr = d.ptr;
-		size = d.size;
-		return *this;
-	}
+std::string Mac::to_string() const
+{
+	std::stringstream ss;
+	ss << std::hex << (int)ptr[0] << "." << (int)ptr[1] << "." <<
+		(int)ptr[2] << "." << (int)ptr[3] << "." <<
+		(int)ptr[4] << "." << (int)ptr[5];
+	return std::string(ss.str());
+};
 
-	Mac::Mac(const data* d, const std::string s)
-	{
-		_type = s;
-		ptr = d->ptr;
-		size = d->size;
-	}
+const std::string& Mac::type() const
+{
+	return _type;
+}
 
-	std::string Mac::to_string() const 
-	{
-		std::stringstream ss;
-		ss << std::hex << (int)ptr[0] << "." << (int)ptr[1] << "." <<
-			(int)ptr[2] << "." << (int)ptr[3] << "." <<
-			(int)ptr[4] << "." << (int)ptr[5];
-		return std::string(ss.str());
-	};
+Ip::Ip(byte* d, const std::string s) :NetAddress({ d, IPV4_HDR_IP_SIZE }, s){}
 
-	std::string Mac::type() const 
-	{
-		return _type;
-	}
+std::string Ip::to_string() const
+{
+	return std::to_string(ptr[0]) + "." +
+		std::to_string(ptr[1]) + "." +
+		std::to_string(ptr[2]) + "." +
+		std::to_string(ptr[3]);
+}
 
-	Ip::Ip(const data* d, const std::string s)
-	{
-		_type = s;
-		ptr = d->ptr;
-		size = d->size;
-	}
+const std::string& Ip::type() const
+{
+	return _type;
+}
 
-	std::string Ip::to_string() const 
-	{
-		return std::to_string(ptr[0]) + "." +
-			std::to_string(ptr[1]) + "." +
-			std::to_string(ptr[2]) + "." +
-			std::to_string(ptr[3]);
-	}
+Port::Port(byte* d, const std::string s): NetAddress({ d, PORT_SIZE }, s){}
 
-	std::string Ip::type() const
-	{
-		return _type;
-	}
+std::string Port::to_string() const
+{
+	return std::to_string(ptr[0] * 256 + ptr[1]);
+}
 
-	Port::Port(const data* d, const std::string s)
-	{
-		_type = s;
-		ptr = d->ptr;
-		size = d->size;
-	}
-
-	std::string Port::to_string() const 
-	{
-		return std::to_string(ptr[0] * 256 + ptr[1]);
-	}
-
-	std::string Port::type() const
-	{
-		return _type;
-	}
+const std::string& Port::type() const
+{
+	return _type;
+}

@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/travis/build/jacksonrr3/packet/src/constants.h
+
 /home/travis/build/jacksonrr3/packet/src/other.h
 iostream
 -
@@ -21,6 +23,8 @@ utility
 -
 exception
 -
+constants.h
+/home/travis/build/jacksonrr3/packet/src/constants.h
 
 /home/travis/build/jacksonrr3/packet/src/packet.h
 iostream
@@ -54,6 +58,8 @@ vector
 algorithm
 -
 utility
+-
+memory
 -
 other.h
 /home/travis/build/jacksonrr3/packet/src/other.h

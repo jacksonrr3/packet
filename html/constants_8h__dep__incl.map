@@ -1,0 +1,9 @@
+<map id="src/constants.h" name="src/constants.h">
+<area shape="rect" id="node2" href="$other_8h.html" title="src/other.h" alt="" coords="96,80,187,107"/>
+<area shape="rect" id="node3" href="$other_8cpp.html" title="src/other.cpp" alt="" coords="23,155,129,181"/>
+<area shape="rect" id="node4" href="$protocol_8h.html" title="src/protocol.h" alt="" coords="153,155,263,181"/>
+<area shape="rect" id="node5" href="$packet_8h.html" title="Заголовочный файл с описанием классов Данный файл содержит в себе определения основных структур и фун..." alt="" coords="90,229,190,256"/>
+<area shape="rect" id="node8" href="$protocol_8cpp.html" title="src/protocol.cpp" alt="" coords="214,229,338,256"/>
+<area shape="rect" id="node6" href="$packet_8cpp.html" title="src/packet.cpp" alt="" coords="5,304,120,331"/>
+<area shape="rect" id="node7" href="$test__packet_8cpp.html" title="src/test_packet.cpp" alt="" coords="144,304,291,331"/>
+</map>

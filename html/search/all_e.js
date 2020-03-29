@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['_7enetaddress',['~NetAddress',['../classNetAddress.html#a9556747e902b6288cdb45b34a3111240',1,'NetAddress']]],
-  ['_7eprotocol',['~Protocol',['../classProtocol.html#a3769626a567da9e261687127fd91bc21',1,'Protocol']]]
+  ['udp_5fhdr_5fpart_5fsz',['UDP_HDR_PART_SZ',['../constants_8h.html#a3b0287414c76ae1472e4b668c9db703c',1,'constants.h']]],
+  ['udp_5fheader',['UDP_Header',['../structUDP__Header.html',1,'']]],
+  ['udp_5fnumber',['UDP_NUMBER',['../constants_8h.html#ac8ec2c37119a4c7c677275d7eb6531c9',1,'constants.h']]]
 ];

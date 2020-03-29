@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Packet: Исходный файл src/constants.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Packet
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+   <div id="projectbrief">класс-анализатор сетевых пакетов</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">constants.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="constants_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">    3</a></span>&#160;<span class="keyword">typedef</span> uint8_t <a class="code" href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//Ethernet</span></div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="constants_8h.html#a90261546a0e2f95d8437fd22a7049378">    6</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#a90261546a0e2f95d8437fd22a7049378">ETH_MAC_SIZE</a> = 6;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="constants_8h.html#a15696207a1aa7cbf68cb6bcebc13d9b8">    7</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#a15696207a1aa7cbf68cb6bcebc13d9b8">ETH_TYPE_SIZE</a> = 2;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="constants_8h.html#ae096a82ccdf43722a1f33de13f83ab28">    8</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#ae096a82ccdf43722a1f33de13f83ab28">ETH_HDR_SZ</a> = 14;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//IPv4</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="constants_8h.html#aeda1f2d262649a86da8d904c4aec7314">   12</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#aeda1f2d262649a86da8d904c4aec7314">IPV4_VERSION</a> = 4;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="constants_8h.html#a0a6a46945b5c6d78374a63d7b107eaec">   13</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#a0a6a46945b5c6d78374a63d7b107eaec">IPV4_HDR_PACKET_SIZE</a> = 2;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="constants_8h.html#ae345f01e13640a93983a99269224aa7f">   14</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#ae345f01e13640a93983a99269224aa7f">IPV4_HDR_PACKET_ID</a> = 2;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="constants_8h.html#add093900c3879fbc094b2eb798da5f20">   15</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#add093900c3879fbc094b2eb798da5f20">IPV4_HDR_FLAGS_OFFSET</a> = 2;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="constants_8h.html#a2334674048b9e26514d5f7862698d5a0">   16</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#a2334674048b9e26514d5f7862698d5a0">IPV4_HDR_CHECK_SUM</a> = 2;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="constants_8h.html#ad1fd6c25a8fcfd8f826803d8bfb604ca">   17</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#ad1fd6c25a8fcfd8f826803d8bfb604ca">IPV4_HDR_IP_SIZE</a> = 4;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="constants_8h.html#ad2630f01a6b568268b7de9c37c32a0c0">   18</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#ad2630f01a6b568268b7de9c37c32a0c0">IPV4_HDR_MIN_SIZE</a> = 5;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="constants_8h.html#a0b9c0d6e3f7e7ee97289f42601814f83">   19</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#a0b9c0d6e3f7e7ee97289f42601814f83">IPV4_HDR_MAX_SIZE</a> = 15;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="constants_8h.html#a028a111da13ebc4a6669daf6ba300257">   21</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#a028a111da13ebc4a6669daf6ba300257">PORT_SIZE</a> = 2;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//TCP</span></div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="constants_8h.html#ab0b0f1c3b3d0955a541ea3ab686aa716">   23</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#ab0b0f1c3b3d0955a541ea3ab686aa716">TCP_NUMBER</a> = 6;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="constants_8h.html#a835c4a852f23d6d8538c133d8ed0b34c">   24</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#a835c4a852f23d6d8538c133d8ed0b34c">TCP_SN</a> = 4;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="constants_8h.html#a70f6af8013492d68e107a36c6894dd18">   25</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#a70f6af8013492d68e107a36c6894dd18">TCP_ASC_SN</a> = 4;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="constants_8h.html#ae3e484754453550d358486ee042363f5">   26</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#ae3e484754453550d358486ee042363f5">TCP_OTH_L</a> = 2;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//UDP</span></div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="constants_8h.html#ac8ec2c37119a4c7c677275d7eb6531c9">   29</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#ac8ec2c37119a4c7c677275d7eb6531c9">UDP_NUMBER</a> = 17;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="constants_8h.html#a3b0287414c76ae1472e4b668c9db703c">   30</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="constants_8h.html#a3b0287414c76ae1472e4b668c9db703c">UDP_HDR_PART_SZ</a> = 2;</div><div class="ttc" id="constants_8h_html_a028a111da13ebc4a6669daf6ba300257"><div class="ttname"><a href="constants_8h.html#a028a111da13ebc4a6669daf6ba300257">PORT_SIZE</a></div><div class="ttdeci">constexpr auto PORT_SIZE</div><div class="ttdef"><b>Definition:</b> constants.h:21</div></div>
+<div class="ttc" id="constants_8h_html_a2334674048b9e26514d5f7862698d5a0"><div class="ttname"><a href="constants_8h.html#a2334674048b9e26514d5f7862698d5a0">IPV4_HDR_CHECK_SUM</a></div><div class="ttdeci">constexpr auto IPV4_HDR_CHECK_SUM</div><div class="ttdef"><b>Definition:</b> constants.h:16</div></div>
+<div class="ttc" id="constants_8h_html_ae096a82ccdf43722a1f33de13f83ab28"><div class="ttname"><a href="constants_8h.html#ae096a82ccdf43722a1f33de13f83ab28">ETH_HDR_SZ</a></div><div class="ttdeci">constexpr auto ETH_HDR_SZ</div><div class="ttdef"><b>Definition:</b> constants.h:8</div></div>
+<div class="ttc" id="constants_8h_html_ad1fd6c25a8fcfd8f826803d8bfb604ca"><div class="ttname"><a href="constants_8h.html#ad1fd6c25a8fcfd8f826803d8bfb604ca">IPV4_HDR_IP_SIZE</a></div><div class="ttdeci">constexpr auto IPV4_HDR_IP_SIZE</div><div class="ttdef"><b>Definition:</b> constants.h:17</div></div>
+<div class="ttc" id="constants_8h_html_a90261546a0e2f95d8437fd22a7049378"><div class="ttname"><a href="constants_8h.html#a90261546a0e2f95d8437fd22a7049378">ETH_MAC_SIZE</a></div><div class="ttdeci">constexpr auto ETH_MAC_SIZE</div><div class="ttdef"><b>Definition:</b> constants.h:6</div></div>
+<div class="ttc" id="constants_8h_html_add093900c3879fbc094b2eb798da5f20"><div class="ttname"><a href="constants_8h.html#add093900c3879fbc094b2eb798da5f20">IPV4_HDR_FLAGS_OFFSET</a></div><div class="ttdeci">constexpr auto IPV4_HDR_FLAGS_OFFSET</div><div class="ttdef"><b>Definition:</b> constants.h:15</div></div>
+<div class="ttc" id="constants_8h_html_a0a6a46945b5c6d78374a63d7b107eaec"><div class="ttname"><a href="constants_8h.html#a0a6a46945b5c6d78374a63d7b107eaec">IPV4_HDR_PACKET_SIZE</a></div><div class="ttdeci">constexpr auto IPV4_HDR_PACKET_SIZE</div><div class="ttdef"><b>Definition:</b> constants.h:13</div></div>
+<div class="ttc" id="constants_8h_html_ab8ef12fab634c171394422d0ee8baf94"><div class="ttname"><a href="constants_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a></div><div class="ttdeci">uint8_t byte</div><div class="ttdef"><b>Definition:</b> constants.h:3</div></div>
+<div class="ttc" id="constants_8h_html_a835c4a852f23d6d8538c133d8ed0b34c"><div class="ttname"><a href="constants_8h.html#a835c4a852f23d6d8538c133d8ed0b34c">TCP_SN</a></div><div class="ttdeci">constexpr auto TCP_SN</div><div class="ttdef"><b>Definition:</b> constants.h:24</div></div>
+<div class="ttc" id="constants_8h_html_a70f6af8013492d68e107a36c6894dd18"><div class="ttname"><a href="constants_8h.html#a70f6af8013492d68e107a36c6894dd18">TCP_ASC_SN</a></div><div class="ttdeci">constexpr auto TCP_ASC_SN</div><div class="ttdef"><b>Definition:</b> constants.h:25</div></div>
+<div class="ttc" id="constants_8h_html_ae3e484754453550d358486ee042363f5"><div class="ttname"><a href="constants_8h.html#ae3e484754453550d358486ee042363f5">TCP_OTH_L</a></div><div class="ttdeci">constexpr auto TCP_OTH_L</div><div class="ttdef"><b>Definition:</b> constants.h:26</div></div>
+<div class="ttc" id="constants_8h_html_a15696207a1aa7cbf68cb6bcebc13d9b8"><div class="ttname"><a href="constants_8h.html#a15696207a1aa7cbf68cb6bcebc13d9b8">ETH_TYPE_SIZE</a></div><div class="ttdeci">constexpr auto ETH_TYPE_SIZE</div><div class="ttdef"><b>Definition:</b> constants.h:7</div></div>
+<div class="ttc" id="constants_8h_html_ac8ec2c37119a4c7c677275d7eb6531c9"><div class="ttname"><a href="constants_8h.html#ac8ec2c37119a4c7c677275d7eb6531c9">UDP_NUMBER</a></div><div class="ttdeci">constexpr auto UDP_NUMBER</div><div class="ttdef"><b>Definition:</b> constants.h:29</div></div>
+<div class="ttc" id="constants_8h_html_a3b0287414c76ae1472e4b668c9db703c"><div class="ttname"><a href="constants_8h.html#a3b0287414c76ae1472e4b668c9db703c">UDP_HDR_PART_SZ</a></div><div class="ttdeci">constexpr auto UDP_HDR_PART_SZ</div><div class="ttdef"><b>Definition:</b> constants.h:30</div></div>
+<div class="ttc" id="constants_8h_html_ad2630f01a6b568268b7de9c37c32a0c0"><div class="ttname"><a href="constants_8h.html#ad2630f01a6b568268b7de9c37c32a0c0">IPV4_HDR_MIN_SIZE</a></div><div class="ttdeci">constexpr auto IPV4_HDR_MIN_SIZE</div><div class="ttdef"><b>Definition:</b> constants.h:18</div></div>
+<div class="ttc" id="constants_8h_html_a0b9c0d6e3f7e7ee97289f42601814f83"><div class="ttname"><a href="constants_8h.html#a0b9c0d6e3f7e7ee97289f42601814f83">IPV4_HDR_MAX_SIZE</a></div><div class="ttdeci">constexpr auto IPV4_HDR_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> constants.h:19</div></div>
+<div class="ttc" id="constants_8h_html_ae345f01e13640a93983a99269224aa7f"><div class="ttname"><a href="constants_8h.html#ae345f01e13640a93983a99269224aa7f">IPV4_HDR_PACKET_ID</a></div><div class="ttdeci">constexpr auto IPV4_HDR_PACKET_ID</div><div class="ttdef"><b>Definition:</b> constants.h:14</div></div>
+<div class="ttc" id="constants_8h_html_aeda1f2d262649a86da8d904c4aec7314"><div class="ttname"><a href="constants_8h.html#aeda1f2d262649a86da8d904c4aec7314">IPV4_VERSION</a></div><div class="ttdeci">constexpr auto IPV4_VERSION</div><div class="ttdef"><b>Definition:</b> constants.h:12</div></div>
+<div class="ttc" id="constants_8h_html_ab0b0f1c3b3d0955a541ea3ab686aa716"><div class="ttname"><a href="constants_8h.html#ab0b0f1c3b3d0955a541ea3ab686aa716">TCP_NUMBER</a></div><div class="ttdeci">constexpr auto TCP_NUMBER</div><div class="ttdef"><b>Definition:</b> constants.h:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
