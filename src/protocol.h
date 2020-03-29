@@ -6,6 +6,7 @@
 #include <vector>
 #include <algorithm>
 #include <utility>
+#include <memory>
 #include "other.h"
 
 struct EthHeader {
