@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['name',['name',['../classProtocol.html#a6e656bd4affc94f6eef5e80adf6501d7',1,'Protocol']]],
-  ['netaddress',['NetAddress',['../classNetAddress.html#aac6812bb2ae6506d896b697640c169e8',1,'NetAddress']]]
+  ['mac',['Mac',['../classMac.html#ae29b74b8c9c4c710557cb777c14f7b60',1,'Mac']]]
 ];

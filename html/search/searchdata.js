@@ -1,13 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "_bcdehilmnopstu~",
+  0: "_bcdeghilmnopstu~",
   1: "deilmnptu",
   2: "copt",
-  3: "bdhilmnopst~",
-  4: "_eipstu",
+  3: "bdghilmnopst~",
+  4: "_beipstu",
   5: "b",
-  6: "lp",
-  7: "b"
+  6: "b"
 };
 
 var indexSectionNames =
@@ -18,8 +17,7 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "typedefs",
-  6: "related",
-  7: "defines"
+  6: "defines"
 };
 
 var indexSectionLabels =
@@ -30,7 +28,6 @@ var indexSectionLabels =
   3: "Функции",
   4: "Переменные",
   5: "Определения типов",
-  6: "Друзья",
-  7: "Макросы"
+  6: "Макросы"
 };
 

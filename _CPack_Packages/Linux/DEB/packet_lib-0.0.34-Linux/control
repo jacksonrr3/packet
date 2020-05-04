@@ -1,10 +1,10 @@
 Package: packet_lib
-Version: 0.0.26
+Version: 0.0.34
 Section: devel
 Priority: optional
 Architecture: amd64
 Depends: libc6 (>= 2.2.5), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
-Installed-Size: 195
+Installed-Size: 172
 Maintainer: jacksonrr3@yandex.ru
 Description: packet_lib built using CMake
 

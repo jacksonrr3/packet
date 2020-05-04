@@ -1,5 +1,7 @@
 var searchData=
 [
   ['data',['data',['../structdata.html#aad3355ddfb4e1a1212328b01ac441766',1,'data::data()'],['../structdata.html#a8b57b5db9b64f979ad84f0a0f1c50dae',1,'data::data(byte *p, const std::size_t &amp;l)']]],
-  ['destination',['destination',['../classProtocol.html#aa78ce8f510124ec24aa6d4c7a958ec9b',1,'Protocol::destination()'],['../classL2ProtoEthernet.html#a685e96f0be2ac44597fbde6c0e602785',1,'L2ProtoEthernet::destination()'],['../classL3ProtoIPv4.html#a560dc8b65de5add5a3b8070a278a116f',1,'L3ProtoIPv4::destination()'],['../classL4ProtoUDP.html#a75c7f64fc8ee051046076ce27056ce79',1,'L4ProtoUDP::destination()'],['../classL4ProtoTCP.html#a9acf1e3b4e379d0e9577aa9de44fc4a4',1,'L4ProtoTCP::destination()']]]
+  ['destination_5fip',['destination_ip',['../classL3ProtoIPv4.html#ab65b95be5942864f8b4d99e6cb74bc3c',1,'L3ProtoIPv4']]],
+  ['destination_5fmac',['destination_mac',['../classL2ProtoEthernet.html#a9a472ba99a7c6035ff67431941048de2',1,'L2ProtoEthernet']]],
+  ['destination_5fport',['destination_port',['../classL4ProtoUDP.html#a259844b6d98ca9fa282666c80e088025',1,'L4ProtoUDP::destination_port()'],['../classL4ProtoTCP.html#a1fb690c02972b6dd846efe62787bd706',1,'L4ProtoTCP::destination_port()']]]
 ];

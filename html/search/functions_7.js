@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_3d',['operator=',['../structdata.html#a1da1da74e377b8a47b7cf4f0d7facd85',1,'data']]]
+  ['name',['name',['../classProtocol.html#a6e656bd4affc94f6eef5e80adf6501d7',1,'Protocol']]],
+  ['netaddress',['NetAddress',['../classNetAddress.html#aac6812bb2ae6506d896b697640c169e8',1,'NetAddress']]]
 ];
