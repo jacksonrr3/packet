@@ -1,7 +1,9 @@
 #include "other.h"
 
+
 ParseError::ParseError(std::string error)
 	: runtime_error(error) {}
+
 
 data::data() = default;
 data::data(byte* p, const std::size_t& l) :ptr(p), size(l) {}
@@ -13,7 +15,7 @@ data& data::operator=(const data& d)
 	return *this;
 }
 
-
+ 
 Mac::Mac(byte* d, const std::string s) : NetAddress({ d , ETH_MAC_SIZE }, s){}
 
 std::string Mac::to_string() const
@@ -56,3 +58,4 @@ const std::string& Port::type() const
 {
 	return _type;
 }
+
