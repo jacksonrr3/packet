@@ -46,7 +46,6 @@ public:
 	std::string to_string() const override;
 	const std::string& type() const override;
 
-	friend class L2ProtoEthernet;
 };
 
 
@@ -57,7 +56,6 @@ public:
 	std::string to_string() const override;
 	const std::string& type() const override;
 
-	friend class L3ProtoIPv4;
 };
 
 
@@ -68,6 +66,4 @@ public:
 	std::string to_string() const override;
 	const std::string& type() const override;
 
-	friend class L4ProtoUDP;
-	friend class L4ProtoTCP;
 };
